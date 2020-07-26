@@ -4,6 +4,7 @@
 	width: 100%;
 	z-index: 10;
 	box-shadow: 1px 7px 26px -2px rgba(230, 230, 230, 1);
+	background-color: white;
 
 	.nav-links {
 		display: flex;
@@ -14,6 +15,7 @@
 
 		.nav-link {
 			margin: 0 2rem;
+			text-decoration: none;
 		}
 	}
 }

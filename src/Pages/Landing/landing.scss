@@ -1,0 +1,162 @@
+$mainBlue: #6c63ff;
+$thodaDarkBlue: #615bca;
+$darkBlue: #2f2e41;
+
+.landing-container {
+	.intro-container {
+		padding: 0 10%;
+		background-color: floralwhite;
+		height: 70vh;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		justify-content: center;
+		align-content: center;
+		.intro-image {
+			height: 600px;
+			width: 500px;
+		}
+		.intro-header {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			font-size: 1.2em;
+			h1 {
+				font-size: 3em;
+			}
+			.intro-header-btn {
+				background-color: $mainBlue;
+				border: none;
+				color: white;
+				font-size: 1.5rem;
+				height: 4rem;
+				width: 20rem;
+				transition: all 200ms;
+
+				&:hover,
+				&:focus {
+					cursor: pointer;
+					background-color: $thodaDarkBlue;
+					outline: none;
+				}
+			}
+		}
+	}
+	.auth-section {
+		background-color: $darkBlue;
+		padding: 2rem 0;
+		color: white;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+
+		.signup-btn {
+			width: 20rem;
+			height: 4rem;
+			font-size: 1.5em;
+			border: none;
+			color: white;
+			background-color: $thodaDarkBlue;
+			transition: all 200ms;
+			&:hover,
+			&:focus {
+				cursor: pointer;
+				background-color: $mainBlue;
+				outline: none;
+			}
+		}
+	}
+	.features {
+		margin: 10rem 10%;
+		.features-header {
+			margin: 4rem 0;
+			text-align: center;
+		}
+		.features-cards {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 4rem;
+			justify-content: center;
+			align-content: center;
+			justify-items: center;
+		}
+	}
+}
+
+@media (max-width: 1225px) {
+	.landing-container {
+		.intro-container {
+			.intro-header {
+				font-size: 1.1em;
+			}
+		}
+		.auth-section {
+			flex-direction: column;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.landing-container {
+		.intro-container {
+			.intro-image {
+				height: 500px;
+				width: 400px;
+			}
+			.intro-header {
+				font-size: 0.8em;
+				.intro-header-btn {
+					width: 15rem;
+				}
+			}
+		}
+		.features {
+			.features-cards {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}
+
+@media (max-width: 784px) {
+	.landing-container {
+		.intro-container {
+			.intro-image {
+				height: 400px;
+				width: 300px;
+			}
+			.intro-header {
+				font-size: 0.8em;
+			}
+		}
+		.auth-section {
+			font-size: 0.8em;
+			.signup-btn {
+				width: 15rem;
+			}
+		}
+	}
+}
+@media (max-width: 600px) {
+	.landing-container {
+		.intro-container {
+			padding-top: 20%;
+			grid-template-columns: 1fr;
+			height: fit-content;
+			.intro-image {
+				height: 400px;
+				width: 300px;
+			}
+			.intro-header {
+				font-size: 0.8em;
+			}
+		}
+		.auth-section {
+			font-size: 0.5em;
+			.signup-btn {
+				width: 10rem;
+				height: 3rem;
+			}
+		}
+	}
+}

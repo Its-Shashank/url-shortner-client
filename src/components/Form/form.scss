@@ -1,0 +1,23 @@
+$mainBlue: #6c63ff;
+$thodaDarkBlue: #615bca;
+$darkBlue: #2f2e41;
+
+.form-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	input {
+		width: 30%;
+		margin-bottom: 1rem;
+		height: 4vh;
+	}
+	.login-btn {
+		border: none;
+		width: 30%;
+		height: 5vh;
+		background-color: $mainBlue;
+		color: white;
+		font-size: 1.2rem;
+	}
+}

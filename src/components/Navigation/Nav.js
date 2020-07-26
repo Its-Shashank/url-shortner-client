@@ -1,16 +1,17 @@
 import React from 'react';
 import './nav.scss';
+import { Link } from "react-router-dom";
 
 const Nav = () => {
-	return(
+	return (
 		<div className='navbar-container'>
-			<h2 style={{marginLeft: '4rem'}}>Shorty</h2>
-			<div style={{flex: 1}}></div>
+			<h2 style={{ marginLeft: '4rem' }}>Shorty</h2>
+			<div style={{ flex: 1 }} />
 			<ul className='nav-links'>
-				<li className='nav-link'>Signup</li>
-				<li className='nav-link'>Login</li>
+				<Link to='/signup' className='nav-link'>Signup</Link>
+				<Link to='/login' className='nav-link'>Login</Link>
 			</ul>
 		</div>
-	)
-}
+	);
+};
 export default Nav;
